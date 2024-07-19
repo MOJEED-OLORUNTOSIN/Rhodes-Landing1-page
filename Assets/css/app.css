@@ -200,7 +200,6 @@ section {
   color: #b5e9d2;
   font-family: var(--f-base);
   font-size: 15px;
-  position: relative;
   justify-content: center;
   letter-spacing: 1px;
   line-height: 0.9;
@@ -210,11 +209,12 @@ section {
   display: flex;
   align-items: center;
 }
-
+.brand-name {
+  font-size: 28px;
+}
 .brand {
   color: white;
   font-size: 28px;
-  vertical-align: ;
 }
 
 .nav-links {
