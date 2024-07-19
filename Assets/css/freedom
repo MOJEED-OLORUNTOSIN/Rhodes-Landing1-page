@@ -28,3 +28,23 @@ window.addEventListener("load", () => {
   .loader > div {
     border: 15px solid #45474b;
   }
+
+
+  <div class="section-intro">
+    <h1 class="heading-2">Drop us a line</h1>
+  </div>
+  <form action="#">
+    <div class="form-group">
+      <input type="text" class="form-input" placeholder="John Doe" >
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-input" placeholder="John@example.com" >
+    </div>
+    <div class="form-group">
+     <textarea name="" rows="5" class="form-input" placeholder="Hi there..."></textarea>
+    </div>
+    <div class="form-group">
+      <button class="btn">Send Message</button>
+     </div>
+  </form>
+</div>
