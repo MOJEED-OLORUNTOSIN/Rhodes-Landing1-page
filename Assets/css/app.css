@@ -24,10 +24,11 @@ html {
 }
 
 body {
-  color: var(--f-base);
+  color: var(--c--body);
   font-family: var(--f-base);
   line-height: 1.8;
   font-weight: 400;
+  cursor: cell;
 }
 
 h1,
@@ -109,9 +110,83 @@ section {
   color: white;
 }
 
+/*loader*/
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  border-radius: 50%;
+}
+.ring {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 #262626;
+  background: transparent;
+  animation: ring 2s linear infinite;
+}
+
+.ring:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes text {
+  50% {
+    color: black;
+  }
+}
+.text {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  color: #737373;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 200px;
+  font-size: 13px;
+  background: transparent;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  animation: text 3s ease-in-out infinite;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #e65c00;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #18b201;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #0456c8;
+  }
+}
+.loader {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #16191e;
+  position: absolute;
+}
+
 /* Navbar */
 .navbar {
-  background-color: var(--c--brand);
+  background-color: var(--c--dark);
   position: fixed;
   top: 0;
   left: 0;
@@ -121,15 +196,25 @@ section {
   z-index: 999;
 }
 
+.tag {
+  color: #b5e9d2;
+  font-family: var(--f-base);
+  font-size: 15px;
+  position: relative;
+  justify-content: center;
+  letter-spacing: 1px;
+  line-height: 0.9;
+}
+
 .navbar .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .brand {
   color: white;
   font-size: 28px;
+  vertical-align: ;
 }
 
 .nav-links {
@@ -137,7 +222,8 @@ section {
 }
 
 .nav-links li:not(:last-child) {
-  margin-right: 44px;
+  margin-right: 18px;
+  line-height: 0.8;
 }
 
 .nav-links li.active a {
@@ -146,9 +232,10 @@ section {
 
 .nav-links li a {
   color: white;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  text-align: justify;
+  word-spacing: -10px;
 }
 
 .nav-links li a:hover {

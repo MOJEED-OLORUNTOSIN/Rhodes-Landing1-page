@@ -11,21 +11,38 @@
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
     <link rel="stylesheet" href="./Assets/css/app.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
+    <!--Loader-->
+    <div class="loader">
+    <div class="center">
+      <div class="text">"please hold on, good things take time..."</div>
+      <div class="ring"></div>
+    </div>
+  </div>
+
     <!--Navbar-->
     <div class="navbar">
       <div class="container">
         <a href="#" class="brand">
-          <img src="	https://rhodesconsultingplus.com/wp-content/uploads/2024/05/RHODES_LOGOblack-01-1.svg" style="width: 170px;" alt="RHODES">
+          <img src="..\Assets\Images\Rhodeslogo.png" style="width: 170px;" alt="RHODES"><div class="tag">
+            Value-driven, Outcome-focused...
+          </div>
         </a>
         <ul class="nav-links">
           <li class="active"><a href="#home">Home</a></li>
-          <li class=""><a href="#services">Services</a></li>
-          <li class=""><a href="#work">Work </a></li>
-          <li class=""><a href="#blog">News</a></li>
-          <li class=""><a href="#contact">Contact</a></li>
-        </ul>
+          <li class=""><a href="#About">About us</a></li>
+          <li class=""><a href="#services">Offerings/Solutions</a></li>
+          <li class=""><a href="#thought">Thought Leadership</a></li>
+          <li class=""><a href="#blog">Curator</a></li>
+          <li class=""><a href="#work">Polls/Survey </a></li>
+          <li class=""><a href="#careerhub">Career Hub</a></li>
+          <li class=""><a href="#contact">Contact Us</a></li>
+           <li class=""><a href="#Resources">Resources</a></li>
+          
+</ul>
+      
         <div class="hamburger">
           <span></span>
           <span></span>
@@ -38,7 +55,7 @@
     <div id="hero">
       <div class="container">
         <h1 class="heading-xl">
-          <span id="hero-titles">We are updating to serve you better</span>
+          <span id="hero-titles"></span>
         </h1>
         <a href="#" class="scroll-to-down"><i class="las la-arrow-down"></i></a>
       </div>
@@ -189,21 +206,21 @@
   <div class="contact-widget">
     <h3 class="heading-3">Email</h3>
     <ul>
-      <li>hello@linda.com</li>
-      <li>johndoe@example.com</li>
+      <li>Rhodes Peters Limited-(Rhodes)</li>
+      <li>Info@rhodesconsultingplus.com</li>
     </ul>
   </div>
   <div class="contact-widget">
     <h3 class="heading-3">Phone</h3>
     <ul>
-      <li>+5 500-358-0309</li>
-      <li>+9 202-358-0309</li>
+      <li>+2348142209947</li>
+      <li>+2342012809139</li>
     </ul>
   </div>
   <div class="contact-widget">
     <h3 class="heading-3">Location</h3>
     <ul>
-      <li>Wesley close,Agungi, Lekki, Lagos</li>
+      <li>The Waterside, 5 Admiralty road Off Admiralty Way Lekki Phase one,Lagos</li>
     </ul>
   </div>
 </div>
@@ -253,11 +270,16 @@
  
  <script>
  var typed = new Typed("#hero-titles", {
-  strings: ["<i>We are</i> Updating", " to serve you better."],
+  strings: ["<i>Brewing A Fresh Pot Of</i> Content & Awesomeness", "...One Moment Please!"],
   typeSpeed: 40,
   loop: true,
   loopCount: Infinity,
-}) </script>;
+}); 
+$(window).on('load',function(){
+  $('.loader').fadeOut(1000);
+  $('.center').fadeIn(10000);
+})
+</script>;
    
     <script src="./Assets/js/app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
