@@ -1,50 +1,8 @@
-.text {
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  color: #262626;
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
-  line-height: 300px;
-  font-size: 1em;
-  background: transparent;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
 
-const loader = document.querySelector(".loader");
-window.addEventListener("load", () => {
-  loader.classList.add("loader-hidden");
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild("loader");
-  });
-});
+  
 
-.loader-hidden {
-    opacity: 0;
-    visibility: hidden;
-  }
-  .loader > div {
-    border: 15px solid #45474b;
-  }
-
-
-  <div class="section-intro">
-    <h1 class="heading-2">Drop us a line</h1>
-  </div>
-  <form action="#">
-    <div class="form-group">
-      <input type="text" class="form-input" placeholder="John Doe" >
-    </div>
-    <div class="form-group">
-      <input type="email" class="form-input" placeholder="John@example.com" >
-    </div>
-    <div class="form-group">
-     <textarea name="" rows="5" class="form-input" placeholder="Hi there..."></textarea>
-    </div>
-    <div class="form-group">
-      <button class="btn">Send Message</button>
-     </div>
-  </form>
-</div>
+  
+  
+   
+    
+  
