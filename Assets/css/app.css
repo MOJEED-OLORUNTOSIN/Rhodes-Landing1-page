@@ -28,6 +28,7 @@ body {
   font-family: var(--f-base);
   line-height: 1.8;
   font-weight: 400;
+  margin: auto;
   cursor: cell;
 }
 
@@ -195,11 +196,20 @@ section {
   display: flex;
   z-index: 999;
 }
+.tag1 {
+  color: #800000;
+  font-family: var(--f-base);
+  font-size: 22px;
+  justify-content: center;
+  letter-spacing: 1px;
+  line-height: 0.9;
+  text-wrap: nowrap;
+}
 
 .tag {
   color: #b5e9d2;
   font-family: var(--f-base);
-  font-size: 15px;
+  font-size: 14px;
   justify-content: center;
   letter-spacing: 1px;
   line-height: 0.9;
@@ -219,11 +229,11 @@ section {
 
 .nav-links {
   display: flex;
+  text-wrap: nowrap;
 }
 
 .nav-links li:not(:last-child) {
-  margin-right: 18px;
-  line-height: 0.8;
+  margin-left: 20px;
 }
 
 .nav-links li.active a {
@@ -235,7 +245,8 @@ section {
   font-size: 12px;
   text-transform: uppercase;
   text-align: justify;
-  word-spacing: -9.7px;
+  word-spacing: -11px;
+  margin-left: 15px;
 }
 
 .nav-links li a:hover {
@@ -305,7 +316,7 @@ section {
   }
 
   .nav-links.active {
-    height: 200px;
+    height: 350px;
   }
 
   .nav-links li {
@@ -314,6 +325,7 @@ section {
 
   .hamburger {
     display: block;
+    margin-left: 50px;
   }
 }
 
@@ -332,7 +344,7 @@ section {
 #hero h1 {
   color: white;
 }
-@keyframes scrolltodown {
+@keyframes scroll-to-down {
   0% {
     transform: translateY(30%);
     opacity: 0;
@@ -355,7 +367,7 @@ section {
   display: grid;
   place-content: center;
   font-size: 24px;
-  color: white;
+  color: red;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 100px;
   position: absolute;
