@@ -30,6 +30,7 @@ body {
   font-weight: 400;
   margin: auto;
   cursor: cell;
+  min-height: 100vh;
 }
 
 .custom-cursor {
@@ -200,48 +201,45 @@ section {
   display: flex;
   z-index: 999;
 }
-
-.navbar .container {
-  display: flex;
-  align-items: center;
-}
-
-.tag1 {
-  color: #4b0000;
-  font-family: var(--f-base);
-  font-size: 22px;
-  justify-content: center;
-  letter-spacing: 1px;
-  line-height: 0.9;
-  text-wrap: nowrap;
-}
-
 .tag {
-  color: #b5e9d2;
+  color: var(--c--body);
   font-family: var(--f-base);
   font-size: 11px;
   position: relative;
   justify-content: center;
   letter-spacing: 1px;
   line-height: 0.9;
+  margin-top: 5px;
   text-wrap: nowrap;
 }
+.navbar .container {
+  display: contents;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center; /* Align items to the left */
+  margin-right: auto;
+  width: 100%;
+}
 .brand {
-  color: white;
-  font-size: 28px;
-  justify-content: left;
+  color: var(--c--dark);
+  font-size: 20px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: -3px;
+  line-height: 3;
 }
 
-.logo {
-  width: 100%;
-  height: 120px;
-  margin-right: 10px;
+.brand img {
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 170px;
 }
+
 .nav-links {
   display: flex;
   text-wrap: nowrap;
-  padding: 11px;
-  letter-spacing: 0px;
+  padding: 10px;
+  letter-spacing: -0.2px;
 }
 
 .nav-links li:not(:last-child) {
@@ -254,11 +252,13 @@ section {
 
 .nav-links li a {
   color: white;
-  font-size: 11px;
+  font-size: 12px;
+  text-decoration: none;
   text-transform: uppercase;
   text-align: justify;
   word-spacing: -1px;
-  margin-left: 5px;
+  line-height: 3;
+  margin-left: 17px;
 }
 
 .nav-links li a:hover {
@@ -310,19 +310,20 @@ section {
 
 @media (max-width: 768px) {
   .nav-links {
-    position: fixed;
+    position: absolute;
     top: var(--n-height);
     left: 0;
     width: 100%;
     flex-direction: column;
+    font-size: 16px;
     padding: 0 24px;
     transition: all 0.3s ease-in-out;
     height: 0;
     overflow: hidden;
     background-color: white;
     justify-content: center;
+    box-sizing: border-box;
   }
-
   .nav-links li a {
     color: var(--c--dark);
   }
@@ -332,12 +333,13 @@ section {
   }
 
   .nav-links li {
-    padding: 6px 0;
+    padding: 1px 0;
   }
 
   .hamburger {
     display: block;
-    margin-left: 50px;
+    margin: 20px 0;
+    margin-left: 200px;
   }
 }
 
@@ -347,7 +349,8 @@ section {
   background-image: url("https://img.freepik.com/premium-photo/attractive-happy-stylish-african-black-woman-working-laptop-computer-office-dreaming-about-weekend-vacation-positive-thinking-person-concept-office-life_129180-8700.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.2), (0, 0, 0, 0.2));
   background-position: center;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   place-content: center;
   color: white;
@@ -411,7 +414,7 @@ section {
 
 @media (max-width: 768px) {
   .grid {
-    gap: 24px;
+    gap: 16px;
   }
   .two-col-grid {
     grid-template-columns: repeat(1, 1fr);

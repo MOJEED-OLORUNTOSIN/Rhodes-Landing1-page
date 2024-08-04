@@ -1,5 +1,13 @@
 /*
 <img src="..\Assets\Images\Rhodesp.png" style="width: 170px" alt="" />
-*/  
-<img  src="Assets\RHODES1.png"  alt="RHODES PETERS LIMITED">
-<img src="..\Assets\logo1.png" alt="RHODES PETERS LIMITED" class="logo">
+*/
+<img src="Assets\RHODES1.png" alt="RHODES PETERS LIMITED" />
+.tag1 { color: #4b0000; font-family: var(--f-base); font-size: 22px;
+justify-content: center; letter-spacing: 1px; line-height: 0.9; text-wrap:
+nowrap; } */ .tag { color: #b5e9d2; font-family: var(--f-base); font-size: 11px;
+position: relative; justify-content: center; letter-spacing: 1px; line-height:
+0.9; margin-top: 5px; text-wrap: nowrap; } .brand { display: flex;
+flex-direction: column; align-items: flex-start; margin-right: auto; } .logo { }
+
+/*Contact Form*/
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-yNdeBpA97PA_zNjpTrI5gFlfKzBP5GEa8-0O7KB1mUZOdw/viewform?embedded=true" width="640" height="1126" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

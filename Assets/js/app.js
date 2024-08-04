@@ -25,4 +25,11 @@ navLinksLi.forEach((li) =>
   })
 );
 
+document.addEventListener("DOMContentLoaded", () => {
+  navLinks.forEach((li) => {
+    li.addEventListener("click", () => {
+      navLinks.add("hidden");
+    });
+  });
+});
 // AOS
